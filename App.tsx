@@ -8,6 +8,8 @@ import PostScreen from "./src/screens/PostScreen";
 import QRCodeList from "./src/screens/QRCodeList";
 import QRCodeScanner from "react-native-qrcode-scanner";
 import QRScanner from "./src/screens/QRScanner";
+import GeoLocator from "./src/components/GeoLocator";
+import CameraCapture from "./src/components/CameraCapture";
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +23,8 @@ export default function App() {
         <Stack.Screen name="Post" component={PostScreen} />
         <Stack.Screen name="QrList" component={QRCodeList} />
         <Stack.Screen name="QrScanner" component={QRScanner} />
+        <Stack.Screen name="GeoLocator" component={GeoLocator} />
+        <Stack.Screen name="Camera" component={CameraCapture} />
       </Stack.Navigator>
     </NavigationContainer>
   );
